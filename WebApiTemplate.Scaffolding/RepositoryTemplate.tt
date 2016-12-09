@@ -1,0 +1,23 @@
+﻿
+<#@ parameter name="TypeName" type="System.String" #>
+<#+
+
+public class RepositoryTemplate : CSharpTemplate
+{
+	public override string TransformText()
+	{
+		base.TransformText();
+#>
+namespace WebApiTemplate.Data.Repositories
+{
+	public class <#= Identifier(TypeName + "Repository") #> : EntityBaseRepository<<#= TypeName #>>
+	{
+		
+	}
+}
+
+<#+
+        return this.GenerationEnvironment.ToString();
+	}
+}
+#>

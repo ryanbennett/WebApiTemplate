@@ -1,0 +1,26 @@
+﻿
+<#@ parameter name="TypeName" type="System.String" #>
+<#+
+// <copyright file="ControllerTemplate.tt" company="">
+//  Copyright © . All Rights Reserved.
+// </copyright>
+
+public class ControllerTemplate : CSharpTemplate
+{
+	public override string TransformText()
+	{
+		base.TransformText();
+#>
+namespace WebApiTemplate.Api
+{
+	[Authorize]	
+	public class <#= Identifier(TypeName + "Controller") #> : ApiController
+	{
+		private <#= TypeName + "Service" #>  _<#= TypeName + "Service" #> = new <#= TypeName + "Service" #>();
+	}
+}
+<#+
+        return this.GenerationEnvironment.ToString();
+	}
+}
+#>

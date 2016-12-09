@@ -1,0 +1,20 @@
+﻿<#@ parameter name="TypeName" type="System.String" #>
+<#+
+public class ServiceTemplate : CSharpTemplate
+{
+	public override string TransformText()
+	{
+		base.TransformText();
+#>
+namespace WebApiTemplate.Services.Logic
+{
+	public class <#= Identifier(TypeName + "Service") #> : EntityServiceBase<<#= TypeName #>>
+	{
+		
+	}
+}
+<#+
+        return this.GenerationEnvironment.ToString();
+	}
+}
+#>
