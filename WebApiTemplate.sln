@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiTemplate.Api", "WebApiTemplate\WebApiTemplate.Api.csproj", "{AAB173E8-0B59-403A-8AD9-B0347E5A7725}"
 EndProject
@@ -10,6 +10,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiTemplate.Data", "WebApiTemplate.Data\WebApiTemplate.Data.csproj", "{A87A9B7F-2D58-4A26-AB15-F5D1540FD842}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiTemplate.Scaffolding", "WebApiTemplate.Scaffolding\WebApiTemplate.Scaffolding.csproj", "{7CF51827-8F21-4876-83BB-E39AEA376A6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4B9ACE40-D675-466C-81B1-19B3D749C867}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
